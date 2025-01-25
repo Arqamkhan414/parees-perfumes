@@ -63,7 +63,9 @@
 
     <section class="products" id="products">
         <h2>Our Collections</h2>
-        <div class="product-grid">
+        <button class="product-nav-btn prev-btn" id="prevBtn">←</button>
+        <button class="product-nav-btn next-btn" id="nextBtn">→</button>
+        <div class="product-grid" id="productGrid">
             <div class="product-card" data-product-id="1">
                 <img src="1.jpeg" alt="Midnight Rose" class="product-image">
                 <h3>Midnight Rose</h3>
@@ -93,56 +95,25 @@
     <section class="featured-brands">
         <h2>Our Premium Brands</h2>
         <div class="brands-grid">
-
-            <div class="chanel_logo">
             <a href="brands.html" class="brand-item">
                 <img src="chanellogo.png" alt="Chanel">
             </a>
-             </div>
-
-             <div class="dior_logo">
             <a href="brands.html" class="brand-item">
                 <img src="dior.jpg.png" alt="Dior">
             </a>
-            </div>
-
-            <div class="gucci_logo">
-                <a href="brands.html" class="brand-item">
-                    <img src="ysl.1.png" alt="ysl">
-                </a>
-                </div>
-
-                <div class="jomalone_logo">
-                    <a href="brands.html" class="brand-item">
-                        <img src="jomalone_logo2.png" alt="jomalone_logo">
-                    </a>
-                    </div>
-                
-                    
-                    <div class="gucci_logo">
-                        <a href="brands.html" class="brand-item">
-                            <img src="tm2.png" alt="Dior">
-                        </a>
-                        </div>
-
-                        <div class="gucci_logo">
-                            <a href="brands.html" class="brand-item">
-                                <img src="versace.jpg.png" alt="Dior">
-                            </a>
-                            </div>
-
-
-
-
-            <!-- <div class="gucci_logo">
-             <a href="brands.html" class="brand-item"> -->
-                <!-- <img src="ysl.jpg.png" alt="ysl> -->
-            <!-- </a> -->
-            <!-- </div> -->
-            <!-- <a href="brands.html" class="view-all-brands">
-                View All Brands <span>→</span>
+            <a href="brands.html" class="brand-item">
+                <img src="ysl.1.png" alt="YSL">
             </a>
-        </div>  -->
+            <a href="brands.html" class="brand-item">
+                <img src="jomalone_logo2.png" alt="Jo Malone">
+            </a>
+            <a href="brands.html" class="brand-item">
+                <img src="tm2.png" alt="Tom Ford">
+            </a>
+            <a href="brands.html" class="brand-item">
+                <img src="versace.jpg.png" alt="Versace">
+            </a>
+        </div>
     </section>
 
     <section class="featured-section">
@@ -167,34 +138,34 @@
         </div>
     </section>
 
-    <section class="why-choose-us">
+    <section class="why-choose-us" id="whyChooseUs">
         <h2>Why Choose Parées</h2>
         <div class="features-grid">
-            <div class="feature">
+            <div class="feature" data-aos="fade-up">
                 <i class="feature-icon">🌟</i>
                 <h3>Authentic Products</h3>
-                <p>100% genuine fragrances from official distributors</p>
+                <p>100% genuine fragrances sourced directly from luxury brands and official distributors worldwide.</p>
             </div>
-            <div class="feature">
+            <div class="feature" data-aos="fade-up" data-aos-delay="100">
                 <i class="feature-icon">🚚</i>
                 <h3>Free Shipping</h3>
-                <p>On orders over $150</p>
+                <p>Complimentary worldwide shipping on all orders over $150, with careful packaging guaranteed.</p>
             </div>
-            <div class="feature">
+            <div class="feature" data-aos="fade-up" data-aos-delay="200">
                 <i class="feature-icon">💎</i>
                 <h3>Luxury Experience</h3>
-                <p>Premium packaging and personalized service</p>
+                <p>Premium packaging, personalized service, and expert fragrance consultation for every customer.</p>
             </div>
         </div>
     </section>
 
     <section class="newsletter">
         <div class="newsletter-content">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to receive updates about new collections and exclusive offers</p>
+            <h2>Stay Connected</h2>
+            <p>Subscribe to receive exclusive offers, new arrivals, and fragrance inspiration delivered to your inbox.</p>
             <form class="subscribe-form">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe Now</button>
             </form>
         </div>
     </section>
@@ -205,8 +176,15 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p>Email: info@luxescents.com</p>
-                <p>Phone: (555) 123-4567</p>
+                <p><span>📧</span> info@pareesperfume.com</p>
+                <p><span>📞</span> (555) 123-4567</p>
+                <p><span>📍</span> 123 Fragrance Lane, NY</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p>About Us</p>
+                <p>Our Brands</p>
+                <p>Store Locator</p>
             </div>
             <div class="footer-section">
                 <h4>Follow Us</h4>
@@ -216,10 +194,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Parees Perfume. All rights reserved.</p>
+            <p>&copy; 2024 Parées Perfume. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="cart.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
