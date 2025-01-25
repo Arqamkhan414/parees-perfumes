@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parees Perfume | Your Signature Scent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PARÉES PERFUME</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart-toggle" id="cartToggle">
+        🛒
+        <span class="cart-badge">0</span>
+    </div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <button class="close-cart" id="closeCart">×</button>
+        <h2>Your Cart</h2>
+        <div id="cartItems" class="cart-items">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-summary">
+            <div class="summary-item">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="main">
+    <section class="hero">
+        <h1>Discover Your Signature Scent</h1>
+        <p>Explore our collection of luxury fragrances</p>
+        <div class="gender-nav">
+            <a href="male.html" class="gender-btn">For Him</a>
+            <a href="female.html" class="gender-btn">For Her</a>
+        </div>
+    </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Collections</h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="1">
+                <img src="1.jpeg" alt="Midnight Rose" class="product-image">
+                <h3>Midnight Rose</h3>
+                <p>A mesmerizing blend of rose and vanilla</p>
+                <span class="price">$99.99</span>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-product-id="2">
+                <img src="2.png" alt="Ocean Breeze" class="product-image">
+                <h3>Ocean Breeze</h3>
+                <p>Fresh and invigorating marine scent</p>
+                <span class="price">$89.99</span>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-product-id="3">
+                <img src="3.png" alt="Woodland Mystery" class="product-image">
+                <h3>Woodland Mystery</h3>
+                <p>Deep woody notes with amber</p>
+                <span class="price">$119.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-brands">
+        <h2>Our Premium Brands</h2>
+        <div class="brands-grid">
+
+            <div class="chanel_logo">
+            <a href="brands.html" class="brand-item">
+                <img src="chanellogo.png" alt="Chanel">
+            </a>
+             </div>
+
+             <div class="dior_logo">
+            <a href="brands.html" class="brand-item">
+                <img src="dior.jpg.png" alt="Dior">
+            </a>
+            </div>
+
+            <div class="gucci_logo">
+                <a href="brands.html" class="brand-item">
+                    <img src="ysl.1.png" alt="ysl">
+                </a>
+                </div>
+
+                <div class="jomalone_logo">
+                    <a href="brands.html" class="brand-item">
+                        <img src="jomalone_logo2.png" alt="jomalone_logo">
+                    </a>
+                    </div>
+                
+                    
+                    <div class="gucci_logo">
+                        <a href="brands.html" class="brand-item">
+                            <img src="tm2.png" alt="Dior">
+                        </a>
+                        </div>
+
+                        <div class="gucci_logo">
+                            <a href="brands.html" class="brand-item">
+                                <img src="versace.jpg.png" alt="Dior">
+                            </a>
+                            </div>
+
+
+
+
+            <!-- <div class="gucci_logo">
+             <a href="brands.html" class="brand-item"> -->
+                <!-- <img src="ysl.jpg.png" alt="ysl> -->
+            <!-- </a> -->
+            <!-- </div> -->
+            <!-- <a href="brands.html" class="view-all-brands">
+                View All Brands <span>→</span>
+            </a>
+        </div>  -->
+    </section>
+
+    <section class="featured-section">
+        <h2>Featured Collections</h2>
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="summer_collection.png" alt="Summer Collection 2024" class="featured-image">
+                <div class="featured-content">
+                    <h3>Summer 2024</h3>
+                    <p>Light and refreshing fragrances for the season</p>
+                    <a href="#" class="featured-btn">Discover More</a>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="bestseller.png" alt="Bestseller Collection" class="featured-image">
+                <div class="featured-content">
+                    <h3>Bestsellers</h3>
+                    <p>Our most loved fragrances</p>
+                    <a href="#" class="featured-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Parées</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="feature-icon">🌟</i>
+                <h3>Authentic Products</h3>
+                <p>100% genuine fragrances from official distributors</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon">🚚</i>
+                <h3>Free Shipping</h3>
+                <p>On orders over $150</p>
+            </div>
+            <div class="feature">
+                <i class="feature-icon">💎</i>
+                <h3>Luxury Experience</h3>
+                <p>Premium packaging and personalized service</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to receive updates about new collections and exclusive offers</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@luxescents.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Parees Perfume. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

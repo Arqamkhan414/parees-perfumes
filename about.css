@@ -1,0 +1,469 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Reduce the left and right padding of the top banner div */
+.top-banner {
+    background-color: #ffcccb;
+    text-align: center;
+    padding: 20px 10px; /* Reduced padding */
+    margin: 0 3%;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Add styles for the top banner text */
+.top-banner p:first-child {
+    font-family: 'DM Serif Display', serif; /* Use the specified Google Font */
+    font-weight: 800; /* Increased boldness */
+    font-size: 42px; /* Increased size */
+    font-style: italic; /* Make text italic */
+    text-transform: uppercase; /* Make text all capital letters */
+    letter-spacing: 3px; /* Increased letter spacing */
+    color: #d63384; /* Added the same deep pink color */
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.15); /* Enhanced shadow */
+}
+
+.top-banner p + p, .bottom-banner p + p {
+    font-family: 'DM Serif Display', serif; /* Changed to match heading font for elegance */
+    font-size: 22px; /* Increased size */
+    font-weight: 400; /* Slightly lighter weight for elegance */
+    font-style: italic; /* Added italic style */
+    margin-top: 20px; /* More spacing from heading */
+    color: #2c1810;
+    line-height: 1.2; /* Adjusted for single line */
+    letter-spacing: 0.5px; /* Subtle letter spacing */
+    max-width: 800px; /* Limit width for better readability */
+    margin-left: auto; /* Center the text block */
+    margin-right: auto;
+    padding: 0 20px; /* Increased side padding slightly */
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.05); /* Subtle text shadow */
+    margin-bottom: 15px; /* Add some bottom margin */
+}
+
+/* Ensure the image banner div has the same size as the top banner */
+.image-banner {
+    padding: 20px 10px;
+    margin: 0 3%;
+    box-sizing: border-box;
+    position: relative; /* Add relative positioning */
+}
+
+.image-banner img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+.image-banner img:hover {
+    opacity: 0; /* Make the image transparent on hover */
+}
+
+.image-banner img:hover::after {
+    content: url('https://png.pngtree.com/background/20230427/original/pngtree-luxury-perfume-bottle-on-a-black-background-with-red-flowers-picture-image_2496703.jpg'); /* Change the image on hover */
+    opacity: 1; /* Make the new image visible */
+    position: absolute; /* Position the new image absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.banner img {
+    width: 98%;
+    height: auto;
+    padding: 20px 10px; /* Ensure the same padding as the top banner */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.slider-container {
+    padding: 20px 10px;
+    margin: 0 3%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 200%;
+    animation: slide 10s infinite;
+}
+
+.slider img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes slide {
+    0%, 45% {
+        transform: translateX(0);
+    }
+    50%, 95% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: #e4e4e4 1px solid;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    line-height: 1.5em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+        margin: 0 5%;
+    }
+
+    .image-banner {
+        margin: 0 5%;
+    }
+
+    .bottom-banner {
+        margin: 0 7%; /* Adjusted margin for mobile */
+    }
+}
+
+/* Bottom banner styles - mirror of top banner */
+.bottom-banner {
+    background-color: #ffcccb;
+    text-align: center;
+    padding: 10px 10px; /* Reduced vertical padding only */
+    margin: 0 3%; /* Same margin as top banner */
+    font-size: 18px;
+    color: #333;
+}
+
+.bottom-banner p:first-child {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 800; /* Increased boldness */
+    font-size: 34px; /* Slightly smaller font */
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #d63384; /* Changed to a deep pink color that complements the background */
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.15); /* Enhanced shadow */
+    margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.bottom-banner p + p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px; /* Slightly smaller font */
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 10px; /* Reduced top margin */
+    color: #2c1810;
+    line-height: 1.2; /* Adjusted for single line */
+    letter-spacing: 0.7px;
+    max-width: 800px; /* Same as top banner */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Increased side padding slightly */
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.08);
+    margin-bottom: 15px; /* Add some bottom margin */
+}
+
+/* Add styles for the signature text */
+.signature {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px; /* Increased from 24px */
+    font-style: italic;
+    font-weight: 900; /* Increased boldness */
+    color: #000000;
+    margin: 25px 0 5px 0; /* Reduced bottom margin from 25px to 5px */
+    letter-spacing: 3px; /* Increased letter spacing */
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1); /* Added subtle shadow for clarity */
+}
+
+/* Add styles for the footer image with an attractive design */
+.footer-image {
+    max-width: 200px; /* Adjusted width for design image */
+    margin: 0 auto 30px; /* Reduced top margin from 10px to 0 */
+    padding: 0;
+    transform: none; /* Remove lift effect */
+    box-shadow: none; /* Remove shadow */
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* Remove border radius */
+    display: block;
+}
+
+.footer-image:hover {
+    transform: none; /* Remove hover effect */
+}
+
+/* Add styles for the new philosophy banner */
+.philosophy-banner {
+    position: relative;
+    background-color: #f8e1e4;
+    text-align: left;
+    padding: 15px 20px;
+    margin: 15px 3%; /* Added top margin for spacing between banners */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.philosophy-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #d63384;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.philosophy-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0; /* Add right: 0 to make it full width */
+    width: auto; /* Change from fixed width to auto */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 100;
+    margin-top: 10px;
+    font-size: 19px !important;
+    color: #000000 !important;
+}
+
+.philosophy-text p {
+    font-family: Arial, sans-serif;
+    font-size: 19px !important; /* Added !important */
+    line-height: 1.6;
+    color: #000000 !important; /* Changed to black and added !important */
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Also add a more specific selector */
+.philosophy-banner .philosophy-text p {
+    font-size: 19px !important;
+    color: #000000 !important;
+}
+
+/* Make sure any nested elements also have black text */
+.philosophy-text * {
+    color: #000000 !important;
+}
+
+.philosophy-banner p:first-child {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 500;
+    color: #2c1810;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding-left: 15px;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+    background: linear-gradient(to right, #d63384, #2c1810);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ...existing code... */
+
+/* Add styles for the new perfume images section */
+.perfume-images {
+    display: flex;
+    justify-content: space-between; /* Reverted back to space-between */
+    padding: 20px;
+    margin: 15px 3%;
+    gap: 20px;
+}
+
+.image-left, .image-right {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    max-height: 400px; /* Changed from 300px to 400px */
+}
+
+.image-left img, .image-right img {
+    width: 100%;
+    height: 400px; /* Changed from 300px to 400px */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* ...existing code... */
+
+.image-left-container, .image-right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-text {
+    padding: 20px;
+    border-radius: 10px;
+    /* Removed background: #f8e1e4; */
+}
+
+.image-text h3 {
+    font-family: 'DM Serif Display', serif;
+    color: #d63384;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.image-text p {
+    font-family: Arial, sans-serif;
+    color: #2c1810;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ...existing code... */
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .perfume-images {
+        flex-direction: column;
+    }
+    
+    .image-left, .image-right {
+        margin-bottom: 20px;
+    }
+}
+
+/* ...existing code... */
+
+.main-philosophy-text {
+    color: #000000 !important;
+    font-weight: normal;
+}
+
+/* ...existing code... */
+
+/* Remove these styles */
+/* .slide {
+    position: relative;
+    width: 50%;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.slide-text h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 34px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.slide-text p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 600px;
+} */
